@@ -1,8 +1,9 @@
-var sus=prompt("원하는 수\n ex\) 1,2,3....")
-var sus2=prompt("원하는 수\n ex\) 1,2,3....")
-var sus3=prompt("원하는 수\n ex\) 1,2,3....")
+var sus0=prompt("원하는 집합 이름")
+var sus1=prompt("원하는 수")
+var sus2=prompt("원하는 수")
+var sus3=prompt("원하는 수")
 var a = {
-  b:[...sus],
+  b:[...sus1],
   c:[...sus2],
   d:[...sus3]
   
@@ -13,4 +14,6 @@ let set2 = [...set];
 set2.sort(function(a, b) {
   return a - b;
 });
-console.log([...set2]);
+let set3 = new Set(set2);
+console.log(sus0,"의 집합은")
+console.log(set3,"입니다");
